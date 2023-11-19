@@ -1,0 +1,73 @@
+$search-bar-background-color: #dadada;
+$search-bar-height: 2.5rem;
+$search-bar-border: none;
+
+.header {
+    max-width: 100%;
+    box-shadow: 5px 5px 20px gray;
+}
+
+.brand {
+    color: white;
+    margin-left: 2%;
+    padding: 0.8rem;
+    width: 23%;
+}
+
+.search-box {
+    width: 75%;
+    height: 2.5rem;
+    display: inline-block;
+    border: none;
+}
+
+.search-button {
+    width: 10%;
+    height: 2.5rem;
+    border: none;
+    background-color: #dadada;
+}
+
+.dropdown {
+    width: 15%;
+    height: $search-bar-height;
+    border: $search-bar-border;
+    font-weight: 700;
+    background-color: $search-bar-background-color;
+}
+
+.login-container {
+    color: white;
+    display: inline-block;
+    width: 15%;
+    text-align: right;
+    margin: 1.7rem 0.2rem 0 0;
+
+    h5 {
+        display: inline-block;
+        a{
+            text-decoration: none;
+            color: white;
+        }
+    }
+
+    .pi-user {
+        margin-right: 0.4rem;
+        padding: 0.2rem;
+        font-size: 1.3rem;
+    }
+}
+
+.cart-wishlist {
+    width: 8%;
+    margin-top: 1.7rem;
+    margin-left: 1em;
+
+    .list-item {
+        color: white;
+        list-style-type: none;
+        display: inline-block;
+        font-size: 1.3rem;
+        margin-right: 0.5rem;
+    }
+}
