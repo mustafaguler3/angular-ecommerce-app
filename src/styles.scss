@@ -1,2 +1,22 @@
 /* You can add global styles to this file, and also import other style files */
 @import "primeicons/primeicons.css";
+
+@mixin underline-transition($width){
+    &::after {
+        content:"";
+        display: block;
+        bottom: 0;
+        left: 0;
+        height: 0.2em;
+        background-color: red;
+        transform: scaleX(0);
+        transition-property: transform;
+        transition-duration: 0.2s;
+    }
+
+    &:hover {
+        &::after {
+            transform: scaleX($width);
+        }
+    }
+}
